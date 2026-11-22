@@ -4,6 +4,7 @@ let guestScore = 0
 let gNb = document.getElementById("g-nb")
 let hNb = document.getElementById("h-nb")
 
+// home score
 function oneH() {
     homeScore += 1
     hNb.textContent = homeScore
@@ -19,10 +20,7 @@ function threeH() {
     hNb.textContent = homeScore
 }
 
-
-
-
-
+// guest score
 function oneG() {
     guestScore += 1
     gNb.textContent = guestScore
