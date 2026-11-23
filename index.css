@@ -100,3 +100,8 @@ h1 {
     font-size: 1rem;
     font-weight: 700;
 }
+
+.page-wrapper {
+      transform: scale(1.5);
+      transform-origin: top center;
+    }
