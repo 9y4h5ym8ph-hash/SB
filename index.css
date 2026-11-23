@@ -8,26 +8,26 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 16px;
     text-align: center;
-    margin: -20px;
+    padding: 16px;
     
 }
 
 .nb-box {
     display: flex;
     flex-direction: column;
-    font-size: 50pt;
+    font-size: 3.5rem;
     font-family: Helvetica, sans-serif;
     text-align: center;
     justify-content: center;
     background-color: #e1eff6;
-    width: 100px;
+    width: 100%;
     height: 90px;
     margin: 0;
-    border-radius: 4px;
+    border-radius: 12px;
     color: #302f4d;
-    border: solid #302f4d;
+    border: none;
 }
 
 h3 {
@@ -36,16 +36,30 @@ h3 {
 }
 
 .bttn-row {
-    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    width: 100%;
+    margin: 12px 0 0;
 }
 
 .bttns {
     margin: 0px;
-    padding: 0 4px;
-    border: solid 1px white;
-    border-radius: 4px;
+    padding: 0;
+    border: none;
+    border-radius: 12px;
     color: #302f4d;
     background-color: #97d2fb;
+    min-height: 44px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 0 4px 0 #5b9fd6;
+    touch-action: manipulation;
+}
+
+.bttns:active {
+    transform: translateY(4px);
+    box-shadow: none;
 }
 
 .boxes {
@@ -53,6 +67,8 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 1;
+    max-width: 180px;
     
 }
 
@@ -67,19 +83,20 @@ h3 {
 
 h1 {
     margin: 0px;
-    color: white;
-    font-weight: 200;
+    color: #302f4d;
+    font-weight: 600;
    
 }
 
 #reset {
-    width: 250px;
-    border: solid 1px white;
-    border-radius: 4px;
-    padding: 5px 0;
-    padding-bottom: 10px;
+    width: 160px;
+    border: none;
+    border-radius: 12px;
     background-color: #58A4E8;
     font-family: Helvetica, sans-serif;
-    color: white;
+    color: #302f4d;
     margin: 20px 0px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 700;
 }
